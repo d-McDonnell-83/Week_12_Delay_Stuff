@@ -78,7 +78,7 @@ function playNote(frequency, filterCutOff)
   filterLFO.connect(LFOdepth);
   LFOdepth.connect(filter.frequency);
 
-  const dur = 7
+  const dur = 0.125
   const env = new GainNode(ctx)
   env.gain.value = 0;
 
