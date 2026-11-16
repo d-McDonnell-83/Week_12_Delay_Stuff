@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <title>ADSR Delay Voice</title>
-<style>body{background:#fff;color:#000}</style>
+<style>body{background:#0ae4bc;color:#000}</style>
 
   </head>
     <body>
@@ -78,7 +78,7 @@ function playNote(frequency, filterCutOff)
   filterLFO.connect(LFOdepth);
   LFOdepth.connect(filter.frequency);
 
-  const dur = 0.125
+  const dur = 5
   const env = new GainNode(ctx)
   env.gain.value = 0;
 
